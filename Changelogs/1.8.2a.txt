@@ -1,0 +1,19 @@
+=Units=
+-Disabled muzzle flash for minis.
+-25% chance of "Reloading!" floating text to appear.
+
+=Ability=
+Orbital Artillery
+-Magnitude lowered from 20 to 10.
+
+Linked Belt
+-Fixed reloading time.
+
+Remote Detonation
+-Fixed remote detonation for C4, Claymore, and Satchel.
+
+=Misc=
+-Lowered sound variables indexes from 4 to 2.
+-Fixed -t, will no longer show other player's Rank XP gain.
+-Global XP gain range reverted back to 4000.
+-Cleaned up a spawn function related to zombies, may have improved performance.

@@ -1,0 +1,42 @@
+MOS
+Assaultman (Mini)
+-HEAT Rocket now able to destroy trees.
+-HEAT Rocket hotkey reassigned to E.
+-HEAT Rocket cooldown changed to 40 seconds.
+
+Combat Engineer (Mini)
+-Repair hotkey reassigned to W.
+
+Designated Marksman
+-Increased attack cooldown by .6 seconds.
+
+Ability
+Precision Shot
+-Attempting to use Precision shot should no longer go into cooldown when reloading.
+-Cast time will now be 3 seconds on all levels.
+
+Revive (NC)
+-Will now have a maximum of 4 levels. Every 5 level will increase Revive level by 1.
+-Level 1 will have 5 second cast time and will decrease by .3 each level. Level 4 cast time will be rounded.
+-Level 1 will have 60 second cooldown and will decrease by 5 each level.
+
+Constriction Net (Flamer/CE/CE Mini)
+-Bosses will have their correct duration.
+
+Build Sentry Gun
+-Reduced cooldown from 5 minutes to 3 minutes.
+
+Automatic Rocket (CAS)
+-Changed model.
+
+Mission
+-Fixed LZ mission from not progressing after ST LZ.
+-Increased LZ duration by 4 minutes each.
+-Added message when LZ mission is over.
+-Civilian Evacuation helicopter should no longer be stuck on ST LZ.
+-Increased earthquake magnitude to 5.
+
+Item
+Stun Grenade
+-Reduced number of charges from 5 to 3.
+-Reduced maximum charges from 10 to 6.

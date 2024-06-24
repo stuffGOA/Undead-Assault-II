@@ -1,0 +1,21 @@
+=Units=
+M70 Sentry Gun (Umb Fac)
+-Fixed issue where attacker does not play gun fire sfx.
+
+=MOS=
+Combat Medic
+-Fixed abnormal movement speed when sprinting.
+
+=Abilities=
+Orbital Artillery
+-Hotkey changed from Q to W
+
+Request Shells
+-Hotkey changed from W to Q
+
+=Misc=
+-Gameplay speed will be forced to Fast.
+-Fixed camera issue during second global respawn (Behe/Garg mission).
+-Text color for weapon jam, out of ammo, and reloading reverted back to white.
+-Weapon jam and Out of Ammo text prompt increased from 500 RXP to 2500 RXP.
+-Mechanical units will no longer grunt when taken damage from zombies.

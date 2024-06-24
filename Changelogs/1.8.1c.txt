@@ -1,0 +1,30 @@
+MOS
+Designated Marksman
+-Critical Shot should no longer go past lvl 8.
+
+RQ-7B Global Hawk
+-Hits after respawn should now be registered to hit count.
+
+Ability
+Precision Shot
+-Will no longer permanently decrease bullet count (gold count).
+
+Laser Designator (DM/SR)
+-Will no longer disable shared vision at the end of its duration on Darreus during Darreus Mission.
+
+Mission
+-Red ping will no longer spam your screen during Genesis mission, LZ phase.
+
+Items
+Q-35
+-Fixed missing damage bonus for Ghost/Ghost mini.
+
+Flashlight
+-Renamed to Light Filter
+
+Environment
+-Adjusted a spot to allow big units to get out.
+
+Misc
+-Added Item Restriction in Intel (F9)
+-Updated message when picking up explosive items when under 500 XP.

@@ -1,0 +1,48 @@
+Zombie
+Leapers, Hephaestus, Minerva
+-Optimized leap targeting.
+
+Darreus
+-Optimized targeting.
+-Will charge more frequently.
+
+Pudge
+-Grew fatter (not visually).
+
+Beast, Mutant
+-Grew abit of armor (not visually).
+
+Thanatos
+-Shell hardened
+
+Genesis
+-;)
+
+Ability
+Constriction Net
+-Reduced duration for non-boss units.
+( 6 | 8 | 10 | 12 | 14 ) >>> ( 6 | 7 | 8 | 9 | 10 )
+-Updated description.
+
+Precision Shot
+-Firing Precision Shot will have a 2 second delay before resuming attack.
+-Reworked Precision Shot casting, it is now similiar to Revive casting.
+>Cannot move, require to use Stop (S) to cancel, etc..
+
+Critical Shot (Machine Gunner)
+-Adjusted Damage Multiplier at level 5-8
+( 5.5 | 6.5 | 7.5 | 8.5 ) >>> ( 5.0 | 5.5 | 6.0 | 6.5 )
+
+Items
+-Updated all item tooltips.
+
+Mission
+-Added 20 second delay leading to resonator mission.
+
+Misc
+-Fixed Navy rank typo.
+-Added -tips command
+-Added Tips in Intel (F9)
+-Updated Hard/Insane Description (F9)
+-First global respawn should no longer reset camera.
+-Resized dialogue font size

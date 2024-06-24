@@ -1,0 +1,113 @@
+=Unit=
+Field Medic
+-Will be able to riflebutt.
+
+Machine Gunner (Mini)
+-Will be able to riflebutt.
+
+M70 Sentry Gun
+-Fixed firing on 0 ammo.
+
+Police (Pistol)
+-Updated distant gun fire SFX
+
+CAS
+-Increased height from 500 to 650.
+
+=MOS=
+Combat Medic
+-Hit Count fixed.
+-Should no longer be removed after selecting CM at start.
+
+Cyborg
+-Will no longer be able to jump while prone.
+-Should no longer get Flesh Wound.
+
+M2A3 Bradley
+-Will be able to repair itself if 1+ Combat Engineer (Mini) is loaded.
+-Repairs 6 HP/s per Combat Engineer.
+
+=Ability=
+USMC/UMB will have the chance of scattering from the following:
+-Plasma Grenade - 80% or <= 1000 units away
+-Frag Grenade - 40% or <= 1000 units away
+-MGL - 30% or <= 1000 units away
+-Fragmentation Round - 30% or <= 1000 units away
+-HE Round - 30% or <= 1000 units away
+-Smoke Round - 30% or <= 1000 units away (UMB) | 100% (USMC)
+-Smoke Grenade - 40% or <= 1000 units away (UMB) | 100% (USMC)
+-Stun Grenade - 40% or <= 1000 units away (UBM) | 100% (USMC)
+-WP Grenade - 40% or <= 1000 units away (UMB) | 100% (USMC)
+-MRL - 25% or <= 1000 units away
+-HEAT Rocket - 25% or <= 1000 units away
+-EMP Rocket - 25% or <= 1000 units away
+-TOW/Hellfire Missile - 25% or <= 1000 units away
+-Cluster Rocket - 25%
+-Fire Mission - 75% after first impact
+-Illumination Round - <= 1200 units away (UMB - before last mission)
+-Orbital Artillery - 100% after first wave
+-Airstrike - 25%
+-White Phosphorus - 25%
+-Ion Cannon - 30%
+-CAS - 2s after spawn (UMB)
+-Flare Gun - <= 1200 units away (UMB - before last mission)
+-Ground Flare - <= 1900 units away  (UMB)
+
+Reload MRL
+-Increased cooldown from 30 to 60 seconds.
+
+Rifle Butt
+-Will no longer turn off upon death.
+
+Reloading
+-Will simulate unjamming procedure.
+-MG will not be doing 5 point safety check on clearing chamber.
+-Will unjam weapon and reload with a fresh magazine.
+-Reloading will +1 to bullet count if magazine is not empty.
+-Unjamming with a full magazine will -1 from the bullet count.
+
+Remote Detonation (CE / AM)
+-Fixed remote detonation for Player 11.
+
+Cluster Rocket
+-Adjusted how stun is being applied.
+
+Critical Shot (MG)
+-Corrected tooltip
+
+Orbital Artillery
+-Reduced cooldown from 10 minutes to 5 minutes.
+-Increase AoE art radius from 475 to 615.
+-Updated tooltips.
+
+Plasma Grenade
+-Fixed delayed initial damage.
+
+CAS
+-Will no longer be spawned as the USMC.
+-Will no longer move randomly every 4s.
+-Caller will have full control.
+
+Illumination Round
+-Added arrival and distant sound effects.
+
+=Item=
+-Expanded item description with more information.
+
+MRL
+-Fixed incorrect name to appear when firing.
+-Increased range from 2000 to 3000.
+
+=Terran=
+-Sewage area now accessible.
+
+=Misc=
+-Optimized police, minis, and MOS weapon triggers by unifying their different functions into their own weapon system triggers.
+-Reworked sound initialization and sound querying.
+-Updated distant gun fire sound effects.
+-Slightly decreased several distant explosion sound effect volumes.
+-Hit Count will now register on hit instead of 10 damage.
+-New zombie unstuck function implemented. (Thanks Derdan!)
+-Added 15 new floating texts when weapon jammed.
+-Added 23 new floating texts when out of magazines.
+-Message when entering warehouse will only appear to the player entering.

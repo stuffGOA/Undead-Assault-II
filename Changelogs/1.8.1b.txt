@@ -1,0 +1,6 @@
+Ability
+White Phosphorus
+-FO will no longer be deleted by UA2 god after F22 exits.
+
+Precision Shot
+-Added cast time tooltip.

@@ -1,0 +1,20 @@
+=Units=
+Flamethrower (Mini)
+-Fixed sound effect when flaming.
+
+Field Cameras
+-Umbrella should no longer have vision from the Field Cameras.
+
+=Abilities=
+Cluster Rocket
+-Reverted the damage location.
+
+=Misc=
+-Revive message should no longer flood the screen during global respawns.
+-Revive message duration lowered to 1s
+-Module Scan message duration lowered to .5s
+-Surveillance Radar message duration lowered to .5s
+-Hints will only show on Recruit and Normal difficulty.
+-Using magazine to reload when 0 magazine will not give an extra bullet.
+-Fixed unjam > reload weapon on 1/1 bullet/magazine.
+-Made some changes to address the reload/no shooting bug.

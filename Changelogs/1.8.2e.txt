@@ -1,0 +1,49 @@
+=Units=
+Pilot
+-Rate of fire increased.
+
+CAS
+-Decreased sight range (night) from 2600 to 800.
+
+=MOS=
+Assaultman
+-EMP rocket will no longer cause ~4-5 second of no shooting after impact.
+
+Combat Medic
+-Will no longer cause MOS spawner to leave on pick.
+
+Forward Observer
+-Added -fi #.## (.3-5) command to adjust Fire Mission intervals, value of d or 0 will reset the intervals.
+-Added -ii #.## (.3-5) command to adjust Illumination Round intervals, value of d or 0 will reset the intervals.
+-Added -fost command to display Fire Mission status.
+
+Heavy Support
+-Fixed reloading issue when firing off last charge.
+
+=Abilities=
+Fire Mission
+-Increased damage against ground units on all level by 60.
+-Cast range will increase by 500 per level.
+-Updated tooltip.
+
+Illumination Rounds
+-Decreased duration of each round from 8s to 4s.
+-Fixed issue with Illumination Rounds and Flare Gun slow affect being stackable.
+-Decreased damage against flying units on all level by 200.
+-Updated tooltip.
+
+Orbital Artillery
+-Optimized process.
+
+=Terrain=
+-Throwing ground flare or a grenade into the warehouse will no longer trigger "You cannot enter..." message.
+
+=Mission=
+-Updated message to show the correct time to find Office Papers when Umbrella Mission starts.
+-Umbrella Facility sentry guns will spawn after succeeding/failing to find all the Office Papers.
+-Fixed shared unit vision from USMC units spawned by triggering the LZs during last mission.
+
+=Misc=
+-Spawn drone and heli will no longer leave when selecting CM.
+-Updated MOS weapon system due to a problem with burst fire and consuming all but 1 magazine when reloading from 0/0.
+-Corrected Weapon Cache spawn time.

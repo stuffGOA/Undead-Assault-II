@@ -1,0 +1,363 @@
+=Zombies=
+Boomer
+-Added more green smoke sfx.
+-Darkened unit color.
+
+Hephaestus
+-Increased time it takes to jump.
+
+=Unit=
+Man
+-Reduced size from .8 to .75
+
+Woman / Child
+-Reduced size from .8 to .65
+
+Minis
+-All minis will have distant gun fire sound effect and muzzle flash when firing.
+
+Police (Shotgun)
+-Will have distant gun fire sound effect.
+
+Police (Pistol)
+-Will have distant gun fire sound effect.
+-Will have new gun fire sound effect.
+-Will have reloading sound effects.
+
+Explosive Charge / C4 / Claymore / Satchel
+-Updated model.
+-Adjusted color.
+-Red flashes means an additional charge has been added.
+
+C4
+-Does not require Detonation Cord to allow detonation.
+-C4s can be detonate by explosion or remotely.
+-Individual C4s will have their own Detonate ability.
+-Detonate by explosion will not deal additional 1400 incendiary damage.
+-Detonate w. additional charge by explosion will deal an additional 2100 incendiary damage.
+-Detonating will deal additional 1400 incendiary damage.
+-Detonating w. additional charge will deal an additional 2100 incendiary damage.
+
+Claymore
+-Adjusted size from .4 to .5
+-Claymore can be detonate by explosion.
+-Detonate by explosion will not deal additional 1800 incendiary damage.
+-Detonate w. additional charge by explosion will deal an additional 2700 incendiary damage.
+-Detonating will deal additional 1800 incendiary damage.
+-Detonating w. additional charge will deal an additional 2700 incendiary damage.
+
+Explosive Charge
+-Adjusted size from .4 to .6
+-Now able to trigger other Explosive Charges and other explosives.
+
+Satchel (Combat Engineer)
+-Increased Satchel limit from 1 to 2.
+-Does not require Detonation Cord to Detonate.
+-Satchel can detonate other satchel within explosion radius.
+-Added missing SFX model.
+
+=MOS=
+Assaultman
+-Added new ability, Reload MRL
+-Added new ability, Detonate Claymores
+-Explosive Charge (Item) will no longer be limited by Place Explosive Charge.
+
+Combat Engineer
+-Replaced Detonation Cord to Set Additional Charge.
+-Can remotely detonate Satchels.
+-Added new submenu, Radio Detonator.
+-Added new ability, Detonate Satchel Charges
+-Added new ability, Timed Detonation.
+
+Combat Medic
+-Added muzzle flash when firing.
+-Added distant gun fire sound effect.
+-Added sound effect when dropping magazine.
+-More Action icon will no longer be in the Attack slot when on Safety.
+
+Cyborg/Machine Gunner
+-Increased bullet speed by 500.
+-Reloading will use Beltlink sound effect.
+
+Forward Observer
+-Increased initial shells for Umbrella from 150 to 200.
+-Decreased initial shells for zombie mode from 500 to 300.
+
+M2A3 Bradley / RQ-7B Global Hawk
+-Will no longer require gold, lumber, and/or food cost for MOS mode.
+-Armor upgrade level will indicate Missile Module level.
+-M2A3 Bradley should no longer lose vision at second global respawn if dead.
+
+Rifleman
+-Updated starting ammo and magazine count, and starting item for default selection.
+
+=Item=
+-Updated several item tooltips.
+
+M400 GL
+-Removed grenade accuracy.
+
+MGL Frags
+-Renamed to 40mm Frags
+
+MRL
+-Now able to destroy trees.
+-Kill barricades on impact fixed.
+-Red dot will last until the rocket impacts.
+-Will reveal impacted area for 4 seconds.
+
+=Difficulty=
+Umbrella
+-Battalion Authorziation authorized at the start.
+-Lowered EXP gain rate from 58% to 40% (Not rank XP).
+-Umbrella unit levels re-adjusted.
+
+=Terrain=
+-Fixed 3 ramp that had unwalkable spots.
+
+=Mission=
+-Adjusted satchel placement area for southwest generator in Umbrella Facility.
+-Finding Office Papers increased from 5 minutes to 8 minutes.
+
+=Environment=
+-Adjusted a spot to allow big units (Gluttons, etc) to get out..
+-Adjusted no jump zone south of Umbrella Facility.
+-You'll be able to jump inside the top loading bay of the Umbrella Facility.
+
+=Misc=
+-Added -discord command.
+-Added movement speed status to -st command
+-Cleaned up some codes.
+-Clicking sound effect during reloading will only play once.
+-Added several new floating texts.
+-Added auto-reload when bullet count is at 0 for .5 seconds.
+-Reloading with a full magazine will no longer -1 from the magazine count.
+-Unjamming when not jammed will -1 from bullet count.
+-Unjamming when bullet count goes from 1 to 0 will automatically reload.
+-Sprint will automatically turn OFF if standing in place for ~2 seconds.
+-Sprint messages will last 1 second instead of 5 seconds.
+-Safety will automatically turn OFF after 20 seconds, 40 seconds for RQ-7B Global Hawk.
+-Global EXP distribution range changed from 4000 to 7000.
+-Added a new tip to -Tips
+-Willhelm changed to Wilhelm.
+
+=Ability=
+-Updated all tooltips
+-Will resume firing much earlier after throwing hand-held grenades (e.g. Frag Grenade, Ground Flares, etc.)
+
+Abilities that will no longer hurt human air units, such as RQ-7B Global Hawk
+-Airstrike
+-Cluster Rockets
+-C4 / Claymore / Explosive Charge / Satchels
+-Energy Orb
+-Fire Mission
+-Frag Grenade
+-HE Rounds
+-Illumination Rounds
+-MRL / HEAT / EMP Rockets
+-Hellfire / TOW Missile
+-MGL / XMAR / Fragmentation Rounds
+-Plasma Grenade
+
+Airstrike
+-Will have red dot until missile impact.
+
+Automatic Rocket (CAS)
+-Changed model.
+
+Build Barricades
+-Changed to require Level 2 Engineering Sklills.
+-Maximum of 8 barricades initially.
+-Each Engineering Skill level increases limit by 4.
+
+Cluster Rocket
+-Will be able to damage trees.
+
+Critical Shot (MG)
+-Increased level 8 Damage Multiplier by .5
+
+Detonate (C4)
+-Detonates the selected C4.
+
+Detonate (Claymore)
+-Detonates selected Claymore.
+
+Detonate (Satchel Charge)
+-Detonates the selected Satchel Charge.
+
+Detonate Claymores (Assaultman)
+-Requires level 4 Basic Demolitions.
+-No energy cost with 0.5 second cooldown.
+-Detonates all active Claymores.
+
+Detonate Satchel Charges (Combat Engineer)
+-Detonates all active Satchel Charges.
+-Cost 50 energy.
+
+Detonator (Combat Engineer)
+-Renamed to Detonate C4s 
+-Detonates all active C4s.
+
+EMP Rocket
+-Red dot will last until the rocket impacts.
+-Will reveal impacted area for 4 seconds.
+-Will no longer deal full damage to vehicles, instead they will take 4-5 damage.
+-Vehicles hit by EMP Rocket:
+>All energy drained
+>Disabled for 3 seconds.
+>Slowed by 75% for 5 seconds after disabled.
+
+Engineering Skills
+-Exit menu after using Detonate C4s, Timed Detonation, and Detonate Satchel Charges.
+
+Field Camera / Flare Gun / Ground Flare
+-Will reveal invisibile units to the entire team.
+
+Flare Gun (SR)
+-Changed requirement to Level 3 Reconnaissance Skills.
+
+Frag / Stun / WP Grenade
+-Remade into normal JASS.
+-Possibly fixed "cannot fire/shoot" bug.
+
+Frag Grenade
+-Increased damage to match Frag Round.
+-Changed level requirement to every odd unit levels for Rifleman.
+
+Fragmentation Rounds
+-Effective against certain enemies.
+-Increased wait time to explode by .5 second.
+
+Fire Mission
+-Changed model and added special effects based on terrain.
+-Adjusted rate of fire from 1 second to .3 second.
+-Now able to destroy trees.
+-Less effective against flying zombies.
+-Base damage against ground zombies increased from 500 to 700
+-Level 1 damage against flying zombies is 170 per round, +20 damage per level.
+-Level 1 damage against ground zombies is 700 per round, +150 damage per level.
+
+Grenade Launcher
+-Renamed to Grenade Accuracy Assist Module
+
+Ground Flare (SR)
+-Reduced energy cost from 40 to 30.
+
+HEAT Rocket
+-Red dot will last until the rocket impacts.
+-Corrected actual explosive radius to match ability AoE art.
+-Adjusted radius to kill trees to be more coherent.
+
+HE Rounds
+-Effective against certain enemies.
+-Increased damage per level from 250 to 300.
+-Increased wait time to explode by .5 second.
+
+Hellfire Missile / TOW Missile
+-Will reveal impacted area for 4 seconds.
+-Hotkey changed to V to keep consistency
+-Corrected damage to match tooltip.
+
+Illumination Rounds
+-Increased energy cost from 12 to 20.
+-Will no longer hurt allies.
+-Dazed duration increased from 4 seconds to 8 seconds per round.
+-Effective against flying zombies.
+-Level 1 damage against flying zombies is 430 per round, +80 damage per level.
+-Level 1 damage against ground zombies is 170 per round, +20 damage per level.
+
+Ion Cannon
+-Red dot will last until laser appears.
+-Hotkey changed from N to W
+
+Jump
+-Renamed to Power Jump
+
+Laser Designator
+-Updated visual indicator to Trueshot Aura.
+-Changed requirement to Level 4 Reconnaissance Skills. (SR)
+
+Night Vision Goggles
+-Renamed to Toggle Night Vision Goggle
+
+Orbital Artillery
+-Ability remade.
+-Changed model and added special effects based on terrain.
+-Able to destroy trees.
+-Integrated with Rangefinder.
+-Requires Level 1 Rangefinder.
+-Requires Battallion Authorization
+-Cost 150 energy with 10 minute cooldown.
+-Has 1 second cast time.
+-Each level increases damage, and waves.
+-Each wave is 5 shells.
+-Deals 275 damage per shell, +275 per level.
+
+Place C4
+-Increased cooldown from 5 seconds to 10 seconds.
+
+Place Claymore
+-Reduced cooldown to 20 seconds.
+-Reduced energy cost to 20.
+
+Place Explosive Charge
+-Increased energy cost to 25.
+
+Plasma Grenade
+-Ringing sound effect removed when standing close to detonation.
+
+Precision Shot
+-Fixed tooltip.
+-Added Precision Shot debuff.
+-Updated visual indicator.
+-Target will share vision to DM for 5 seconds.
+
+Radio Detonator (Combat Engineer)
+-Contains the Detonate C4s, Timed Detonation, and Detonate Satchels Charges
+
+Reconnaissance
+-Added flavor texts when reaching level 4 Ghost Skills.
+-Changed how map reveal works when maxing Ghost Skills.
+>Will no longer reveal WC that were not found.
+
+Reload MRL
+-Requires MRL in your inventory.
+-Requires level 4 Basic Demolitions.
+-Cost 20 energy with a 30 second cooldown
+-Add 2 charges to MRL, 1 if MRL has 3 charge remaining.
+-Adding 1 charge to MRL will cost half of energy cost.
+
+Request Shells (Forward Observer)
+-Requires Level 5 Rangefinder.
+-Requires Battallion Authorization.
+-Cost 75 energy with 10 minute cooldown.
+-Add 100 shells.
+-Has 1 second cast time.
+
+Revive (NC)
+-Updated tooltip.
+
+Set Additional Charge
+-Cost 15 energy with .5 second cooldown.
+-Can upgrade all explosives for x1.5 the damage
+>Can upgrade: Explosive Charge, C4, Claymore, Satchel
+
+Stance
+-Renamed to Change Stance
+-Proning will have a 75% chance of surviving big explosions at 400+ range.
+
+Take off
+-Updated code for Take off process. (Thanks Derdan!)
+
+Timed Detonation (Satchel Charge)
+-Detonates the selected Satchel Charge after 6 seconds.
+
+Timed Detonation (Combat Engineer)
+-Detonates all active Satchel Charges after 6 seconds.
+
+Unjam
+-Will -1 bullet from the current bullet count.
+
+White Phosphorus
+-Will have red dot until missile impact.
+-Will no longer deal 200 damage to mechanical units after impact.

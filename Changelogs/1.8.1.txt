@@ -1,0 +1,3 @@
+Ability
+Precision Shot
+-Fixed missing damage output.

@@ -1,0 +1,188 @@
+=Units=
+Umbrella
+-Restored original radio chatter sound effects.
+
+Zombies
+Minerva
+-Reverted current skin (Unbroken ...) back to original skin (Wildkin ...)
+-Increased unit height level to match previous height level
+
+Minis
+-Fixed an issue where reloading manually on a mini will show "You do not have enough magazine." message
+-Reverted rifle weapons back to original sound effect.
+
+Explosive Charge / C4 / Claymore
+-Updated selection scale to match outer blast radius.
+-Will cause screen to shake on exploding.
+
+Satchel
+-Explosion visual effect is now a circle.
+-Updated selection priority to be the highest.
+
+-Paralysis Trap
+-Updated selection priority to be the lowest.
+
+CAS
+-Will no longer be allowed to follow enemies.
+
+=MOS=
+Ghost
+-Fixed issue of firing a lot more projectiles than it should when firing at an enemy.
+
+Flamethrower
+-Fixed abnormal fuel consumption.
+-Fixed issue when using magazine/ammo case when flaming an enemy closeby.
+
+Forward Observer
+-Fixed issue where Player 11 was not able to use Fire Mission and Illumination Rounds.
+-Shells reduced from 300 to 150 for outbreak mode.
+
+M2A3 Bradley & RQ-7B Global Hawk
+-Added Module Scan ability.
+
+Machine Gunner & Cyborg
+-G89 will no longer causes gun jam.
+-New gun fire sound effect.
+
+=Abilities=
+Basic Combat Training
+-Fixed issue where reload speed bonus was not properly working.
+
+HEAT Rocket (Assaultman Mini)
+-Hotkey changed from E to W.
+
+EMP Rocket
+-Rocket will now fire from player's current position.
+-Replaced Dizziness SFX with Purge SFX
+
+HEAT Rocket (Assaultman & Assaultman Mini)
+-Rocket will now fire from player's current position.
+
+Cluster Rocket (Combat Engineer, Combat Engineer Mini, and Cyborg)
+-Reworked and optimized to use updated libraries for better performance.
+
+Nano Injection (Field Medic Mini & Navy Corpsman)
+-Will cure all of the restored ailments.
+
+Cure (Combat Medic)
+-Will cure all of the restored ailments.
+
+Saline Syringe (Detachment Commander, Ghost, Grenadier, and Rifleman)
+-Will be able to cure Cyano Acid.
+
+Field Kit (Scout Reconnaissance)
+-Will be able to cure Cyano Acid.
+
+Anabolic Steroids (Combat Medic)
+-Fixed attack speed bonus for burst fire.
+
+Revive (Combat Medic & Navy Corpsman)
+-There will be a global message who has been revived and who is the reviver.
+
+Surveillance Radar (M2A3 Bradely & RQ-7B Global Hawk)
+-There will be a global message when scanning.
+
+Frag Grenade / Fragmentation Round / MGL
+-Added a floating text line.
+
+Module Scan ( M2A3 Bradley & RQ-7B Global Hawk )
+-Does a map-wide scan and pings all Missile Modules last known location.
+-Ping last for 5s, costing 30 energy with a 30s cooldown.
+
+Critical Shot (Combat Medic)
+-Fixed typo.
+
+Plasma Grenade
+-Fixed plasma residue damage duration.
+
+Airstrike (Forward Observer & RQ-7B Global Hawk)
+-Will be able to detonate Satchel Charges
+
+Orbital Artillery (Forward Observer)
+-Will be able to detonate Satchel Charges
+
+Ion Cannon (Ghost & Ghost Mini)
+-Will be able to detonate Satchel Charges
+
+=Ailments=
+-Fixed issue on ailments not being applied.
+-Increased the range ailments are being applied.
+-Restored 3 ailments that were intentionally disabled or not working.
+>Broken Arm
+>Broken Leg
+>Cyano Acid
+-Readjusted the restored ailments for fair gameplay.
+-Ailments are now able to be applied to any units besides the undead and mechanical units (including cyborg).
+-Updated all healing abilities description.
+
+Broken Arm
+-Decreased duration from 6 minutes to 3 minutes.
+
+Broken Leg
+-Decreased duration from 6 minutes to 3 minutes.
+-Decreased movement speed debuff from 25% to 15%
+
+Cyano Acid
+-Decreased movement speed debuff from 15% to 10%
+
+=Terran=
+-Added message for RQ-7B Global Hawk when attempting to enter Umbrella Facility.
+
+=Mission=
+-Convoy failure condition requires all APC to be destroyed instead of 2 APCs.
+-Increased difficulty after failure to escort APC to warehouse.
+
+=Item=
+Aim Assistant
+-Flamer will no longer receive bonus, instead added to Scorch Flamethrower.
+
+Medical Kit
+-Will now be able to cure Ethanedioic and Cyano Acid.
+
+Saline Syringe
+-Will cure all of the restored ailments.
+
+Stun Rounds
+-Will cause shocking sfx when stunned.
+-Updated tooltip.
+-Increased damage on stun to 52.
+
+Ammo Case / Magazine
+-Minis should now be able to drop magazines when consuming Ammo Case/Magazines
+
+Missile Module
+-Increased spawn amount from 4~8 to 5~9
+
+Scorch Flamethrower
+-Increased bonus attack by 9.
+-Added 15% attack speed bonus.
+
+=Difficulty=
+Umbrella
+-Increased EXP base gain rate from 40% to 44%
+-EXP gain rate is now dynamic, amount of players will determine the EXP gain rate.
+-Umbrella unit levels readjusted.
+-Fixed issue where throwing Ground Flare nearby would cause an attack alert ping.
+
+Survival
+-Disabled Revive on both NC and CM.
+
+=Mode=
+Outbreak
+-Reduced EXP base gain rate from 47% to 35%
+-EXP gain rate is now dynamic, amount of players will determine the EXP gain rate.
+
+=Misc=
+-Fixed multi-reloading when firing close to enemies.
+-Restored several sound files that were corrupted or missing.
+-Fixed 4 incorrect sound file names.
+-Restored hint messages throughout 5 minutes into the game.
+-Ally Color Filter will default to Mode 2.
+-Fixed chain explosion for C4, Claymore, Explosive Charge, and Satchel Charge.
+-Safety duration increased by 5s.
+-All units will start with an extra bullet, except for DC, Flamethrower, Ghost, HS, RQ-7B Global Hawk, and M2A3 Bradley.
+-MOS Weapon System optimized
+-Distant gun fire sound effect will only play locally.
+-Fixed 2 missing sound effects during mission.
+-Updated several abilities to use several new and optimized libraries.
+-Fixed initial HUD title and HUD time from clashing each other.

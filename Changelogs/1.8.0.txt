@@ -1,0 +1,131 @@
+Zombies
+Leapers, Hephaestus
+-Decreased the amount of frequent jumps.
+
+Hive Queen
+-Increased HP by 30%
+-Increased Armor by 2.
+-Has the ability to evade.
+
+Gonarch
+-~3-4 Crabs will spawn instead of 1-2 Crabs.
+
+Crabs
+-Movement speed increased.
+
+Genesis
+-Genesis will give you a ;)
+
+MOS
+Assaultman
+-Optimized EMP Rocket.
+-Hotkeys changed for Basic Demolitions; Repair (Q), Paralysis Trap (W), Place Explosive Charge (E), Place Claymore (R).
+-Rearranged the button position to reflect the above.
+-Updated Claymore's description.
+-Claymore will have a partial damage of 1000 between 350 and 450 range of Claymore.
+-Updated Claymore's Area of Effect art from 350 to 450.
+
+Combat Engineer
+-Increased C4 damage from 1200 to 1400.
+-C4 will have a partial damage of 1000 between 350 and 450 range of C4
+-Updated C4's Area of Effect art from 350 to 450.
+-Satchel Charge can no longer be primed multiple times.
+-Detonation Cord will be disabled when Satchel Charge is primed. It will be re-enabled after Satchel Charge explodes.
+
+Flamethrower
+-Napalm will be available at each odd level (1, 3, 5, 7, 9).
+-"Not enough fuel to discharge" message will only display to those playing as Flamethrower.
+
+Ghost (Mini)
+-Can use Q-35 weapon upgrade
+-Can no longer use PTR-5 and XM35 MAR weapon upgrade
+
+Navy Corpsman
+-Reduced Revive casting time from 5 to 3 seconds.
+-Reduced Revive cooldown from 60 to 45 seconds.
+
+Combat Medic
+-Increased Revive casting time.
+( 5s | 4.3s | 3.6s | 3s ) >>> ( 5s | 4.8s | 4.6s | 4.4s )
+-Increased Revive cooldown.
+( 60s | 45s | 48s | 42s) >>> ( 60s | 58s | 56s | 54s )
+-Decreased Chance to Critical Strike from 33% to 20% (Max level)
+-Decreased Damage Multiplier from 6% to 5% (Max level)
+
+Forward Observer
+-Removed shell cost on description for White Phosphorus.
+-Possibly fixed jet random freezes in midflight for White Phosphorus.
+
+RQ-7B Global Hawk
+-Fixed team kill message. Before it was only "PLAYER has been killed in action." and not including "KILLER has killed PLAYER."
+-Will now respawn with Bravo Company (not the first global respawn).
+-Hellfire Missile &  Photon Blast will retain its level after respawn.
+
+Designated Marksman
+-Will no longer move to get into range if Marksmanship is not maxed.
+-Added Laser Designator ability at level 3 Marksmanship. Same as Scout Reconnaissance Laser Designator ability but -5 armor debuff and 60 seconds.
+-Laser Designator available only on Zombie modes.
+-Suppressor available only on Umbrella mode.
+-Critical Shot will level up with Special Combat Training and Marksmanship.
+-Opportuned Shot will be available at level 2 Marksmanship.
+-Added new ability, Precision Shot. More information at Ability.
+-Monomolecular Wire Shot available only on Umbrella mode.
+
+Grenadier
+-HE and Fragmentation Rounds will not longer have mana reduce per level. It will increase by 2 per level.
+-Smoke Grenade mana cost changed from 25 to 32.
+
+M2A3 Bradley
+-Fixed team kill message. Before it was only "PLAYER has been killed in action." and not including "KILLER has killed PLAYER."
+-Hits will now register to hit count.
+
+Ability
+C.A.S
+-"Close air support inbound!" message will include player calling CAS.
+
+Stop (More Actions)
+-Should no longer have a delay.
+
+Precision Shot
+-Only available on zombie modes.
+-Take aim and fire at the enemy's critical weak point, dealing significant damage from afar.
+-Armor Piercing Round, Aim Assistant, and PTR-5 will improve its damage.
+-Will stun the enemy upon hitting, duration depend on level.
+-Will consume 1 bullet per use.
+-Damage, range, and cooldown will improve per level.
+-Energy cost will increase per level.
+
+Terrain
+-Adjusted no jump zone south of Umbrella Facility.
+-Adjusted explosion zone south of Umbrella Facility.
+
+Mission
+-Reduced wait time for first mission, Search and Resuce Civilians, ranging from 4-9 minutes to 5 minutes.
+-Delayed Black Knight spawn during Escort Convoy mission.
+-Reduced wait time between Vial and Darreus mission from 6 minutes to 3 minutes.
+-Reduced Resonator mission timer from 15 minutes to 10 minutes.
+-Reduced Find Office Papers mission from 7 minutes to 5 minutes.
+-Office Paper mission will scale on difficulty selected; Normal will require 2 Office Papers, Hard requires 4, Insane requires all 6.
+-An Artemis will spawn after collecting Office Papers mission.
+-Crate mission will now have a 10 minute timer if APC fails to reach the warehouse. Timer will not reset after picking up the crate.
+-LZ mission will now have a timer (depending on how many LZ are remaining, e.g. 3 LZ will be 6 minutes, 2 LZ will be 4 minutes, etc.) if Bravo Company are all dead.
+
+Items
+All Items
+-Added description after selecting the item.
+
+MRL
+-Corrected Area of Effect art to match description.
+-Assaultman will no longer affect MRL blast radius.
+-Added red dot, "Fire in the hole!" message, and plays a sound when firing.
+
+Environment
+-Adjusted 2 spots to allow big units (e.g. Glutton, Pudge, etc.) to get out.
+
+Misc
+-View will automatically set to -v 30
+-Drone will no longer fly away if Red takes too long to choose difficulty (more than 8 seconds).
+-Autoload will run on default mode (Normal) if Red couldn't decide on the difficulty.
+-Corrected rank and player name when selecting Navy Corpsman.
+-Grenader no longer available on -rifle mode.
+-Increased HUD width.
