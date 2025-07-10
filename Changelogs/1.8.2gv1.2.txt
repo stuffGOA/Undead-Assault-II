@@ -1,0 +1,479 @@
+# 1.8.2gv1.2
+## Fixes
+### Explosion Crash
+It is still unclear what was the root cause of the explosion crashes. However, it had been discovered that the crash would normally occur around the 8-minute mark. Several libraries related to the crash had been reworked from the ground up and had seemingly resolved itself after several tests of continuous explosion via chain reaction. Hopefully this fixes it without the fear of crashing a good game.
+### C4ing the Global Hawk
+- Fixed issue with C4 being able to damage RQ-7B Global Hawk
+### Reloading
+- USMC & Police units will have their own dedicated timer array for reloading
+- **Linked Belt** will now use the Weapon System timer instead of using the general timer array
+### Dynamic Weapon System Buff
+- Fixed Combat Medic not receiving the Dynamic Weapon System Buff
+### Binoculars
+- Removed energy cost for Designated Marksman (Mini) **Binoculars**
+### Field Camera
+- Allies should no longer receive vision after camera is destroyed inside the Umbrella Facility during its destruction
+### Solid Rocket Boost
+- Removed techtree requirement
+### Aim Assistant
+- Fixed incorrect attack speed on tooltip
+### Tinnitus
+- Fixed tinnitus not applying properly
+- Will only apply based on player’s MOS (not player’s minis) location and distance to the target area
+### Intel (F9)
+- Corrected Combat Engineer placement in the MOSes tab
+### Energy Generator Passive Ability
+- Fixed a bug where the unlockable passive ability was available before reaching the skill level requirement
+### HEAT Rocket (Mini)
+- Fixed incorrect radius on tooltip
+### Umbrella Mode
+- Fixed Umbrella getting stuck
+
+## Balancing & Changes
+### Explosive Devices
+**Detonation**
+- Remotely detonating an explosive (not through external variables, like detonating with a Frag Grenade), such as Satchel Charge, C4, or Claymore, will cause other explosives within the radius to deal their own detonation damage
+- **Detonate Satchel Charges** (Combat Engineer), **Timed Detonation** (Combat Engineer), **Detonate C4** (C4 & Combat Engineer), and **Detonate Claymore** (Claymore & Assaultman) will be disabled upon activation or if there are no existing explosives
+  - The ability will be enabled upon placing a new explosive
+**Set Additional Charges**
+- Damage multiplier will be included to the outer radius damage for Explosive Charge, C4, and Claymore
+**Placing Explosives**
+- **Place Satchel Charges**, **Place Explosive Charge**, **Place C4**, and **Place Claymore** will no longer remove existing placed Explosives, the ability will instead be disabled upon reaching the limit
+- ***Place Claymore***
+  - Cast time decreased from .5s to .2s to match with **Place C4**
+  - Energy cost lowered from 20 to 10
+  - Cooldown decreased from 20s to 10
+**Satchel Charge**
+- Unit group selection priority updated to always be first
+- Updated SFX
+**Explosive Charge**
+- Will no longer ignore armor damage reduction
+**C4**
+- Unit group selection priority updated to always be second
+- Will no longer ignore armor damage reduction
+- Base damage increased from 1400 to 1800
+**Claymore**
+- Unit group selection priority updated to always be third
+- Will no longer ignore armor damage reduction
+- Attack type changed from **Incendiary** to **Shotgun**
+- Base damage decreased from 1800 to 1400
+- Removed SFX for distant explosion
+- Updated VFX
+### MOS Weapon System/Mini Weapon System
+**Reloading**
+- Update VFX when a unit is reloading
+**Shotgun**
+- Updated SFX
+**Machine Gun**
+Due to the updated SFX, time it takes to reload has been changed if holding or not holding a G89.
+- Updated SFX for regular MG and G89
+- Base reload time decreased from 6s to 4s
+- Manual reloading time has been decreased by 7% - 11% (MOS)
+- Regular MG auto reloading time has been increased by 70% - 107% (MOS)
+- G89 auto reloading time has been decreased by 7% - 11% (MOS)
+- Regular MG auto & manual reloading time has been increased by 49% (Mini)
+- G89 auto & manual reloading time has been decreased by 13% (Mini)
+**Plasma**
+- Will no longer play the charge swap SFX when charge is full.
+**Unjam**
+Unjam has been renamed to **Rack Bolt** and the unjamming process has been updated. Rifle units will now use the **SPORTS** (***S***lam, ***P***ull, ***O***bserve, ***R***elease, ***T***ap, ***S***hoot) method, MG units will use the **POPS** (***P***ull, ***O***bserve, ***P***ush, ***S***hoot) method, and shotgun units will simply just pump their shotguns.
+- Unjam has been renamed to **Rack Bolt**
+- Cooldown decreased from 5s to .2s
+**Rifle**
+- Unjam base time has been decreased from 2.85s - 3.55s to 1s (Basic Combat Training not included)
+**Shotgun**
+- Time it takes to unjam is now 1.5s
+**Machine Gun**
+- Basic Combat Training will no longer affect the unjam process.
+- Time it takes to unjam is now 3.3s
+### Abilities
+**M2A3 Bradley & RQ-7B Global Hawk**
+On 1.8.2gv1.1, the Hellfire Missile and TOW Missile are identical to each other in stats and process, with the 2 differences being the name and vehicle. In this version, both missiles have been updated and balanced to differentiate from one another. While the Hellfire missile is a fire-and-forget, the TOW missile will have homing capability. TOW Missiles will now be able to target individual units if the casting AoE circle is centered on the unit. The damage dealt to the units will be entirely dependent on whether the target is ground or air.
+-# This change may result in an increase of TK.
+- ***Hellfire Missile***
+  - Missile speed stays consistent when firing close by
+  - Will have a 2-layer damage
+  - Base damage has been increased from 1300 to 1500 for both layers
+  - Damage per level will have a consistent 600 damage increase for both layers
+  - Base range has been increased from 3000 to 4250
+  - Range will be increased by 50 per level until level 6 with max range of 4500
+  - Energy cost will be increased by 1 per level until level 6 with the maximum energy cost of 25
+  - ***Inner***
+    - Will ignore armor damage reduction
+    - Will have a base radius of 100
+    - Radius will be increased by 5 per level until level 6 with a max radius of 125
+  - ***Outer***
+    - Will not ignore armor damage reduction
+    - Will have a base radius of 425
+  - Radius will be increased by 5 per level until level 6 with a max radius of 450
+- ***TOW Missile***
+  - Missile can miss its target
+  - Missile speed stays consistent when firing close by
+  - Will have a 2-layer damage
+  - Damage per level will have a consistent 500 damage increase for both layers
+  - Base range has been increased from 3000 to 3500 for level 1 and level 2
+  - Radius will stay 375 across all levels
+  - Targeting ground units will deal 1/3 of the damage to air units
+  - Targeting air units will only damage air units
+  - VFX updated when missile hits air units
+  - ***Inner***
+    - Will ignore armor damage reduction
+    - Will have a base radius of 125
+  - ***Outer***
+    - Will not ignore armor damage reduction
+    - Will have a base radius of 375
+
+**Forward Observer**
+- **Orbital Artillery**
+  - Will no longer require Battalion Authorization
+  - Base damage increased by 25
+  - Cooldown will be different per level
+  - Energy cost will be different per level
+  - After casting, there will be a red dot at the target area, a 3 second request time, and a ping on the mini map
+  - Explosives within range will detonate and deal their respective detonation damage
+  - Updated SFX for distant impact
+- **Airstrike**
+  -# **Eagle noises** :eagle1anim:
+  - VFX received a complete overhaul, making it more impactful then before
+  - SFX updated
+  - Cast time decreased from 3s to .3s
+  - Time over target will depend where the target is on the map
+  - Will have a 2-staged damage
+  - ***First Stage (Impact)***
+    - Added new VFX
+    - Bomb impact will deal Shotgun attack type damage
+    - Will have a 3-layer damage, inner, middle, and outer
+      - Inner: ~10000 damage in a 50 radius
+      - Middle: ~7000 damage in a 100 radius
+      - Outer: ~2000 damage in a 300 radius
+  - ***Second Stage (Detonation)***
+    - Increased VFX scale
+    - Damage increased from 25000 to 36000 (Incendiary)
+    - Explosives within range will detonate and deal their respective detonation damage
+- **White Phosphorus**
+  - VFX received a complete overhaul
+  - SFX updated
+  - Time over target will depend where the target is on the map
+  - Will have a 2-staged damage
+  - ***First Stage (Impact)***
+    - Added new VFX
+    - Bomb impact will deal Shotgun attack type damage
+    - Will have a 3-layer damage, inner, middle, and outer
+      - Inner: ~10000 damage in a 50 radius
+      - Middle: ~7000 damage in a 100 radius
+      - Outer: ~2000 damage in a 300 radius
+  - ***Second Stage (Detonation)***
+    - Covers the target area with white phosphorus
+
+**Assaultman (Mini & MOS)**
+- **HEAT Rocket (Mini & MOS)**
+  - Rocket speed stays consistent when firing close by
+  - Will resume firing quicker after firing **HEAT Rocket**
+  - Will have a 2-layer damage
+  - Both layers will include MRL damage multiplier if MRL is in the unit’s inventory
+  - ***Inner***
+    - Damage applied to units within 105 radius will ignore the unit’s armor damage reduction
+    - No changes to the damage dealt and damage per level
+    - Radius will increase by 5 per level
+  - ***Outer***
+    - Damage applied to units outside of the inner radius will not ignore the unit’s armor damage reduction
+    - Damage at level 1 will be 4500
+    - Damage per level decreased from 800 to 400
+    - No changes to the radius and the radius per level
+- **EMP Rocket**
+  - Rocket speed stays consistent when firing close by
+  - Will resume firing quicker after firing **HEAT Rocket**
+
+**Grenadier**
+- **Rounds**
+  - Launching a round will pause weapon firing for .4s
+  - At over 1500+ range will cause the round to immediately explode on impact
+  - Firing a round will cause other round abilities (except for M400 GL & XM35 MAR) go into a 1s cooldown
+  - SFX Updated
+   - ***Fragmentation Round***
+     - Damage at level 1 increased from 600 to 1200
+     - Damage per level improvement remains untouched
+     - Radius decreased from 400 to 350
+   - ***HE Round***
+     - Damage at level 1 increased from 650 to 1300
+     - Damage per level improvement increased from 300 to 600
+
+**Frag Grenade**
+Frag Grenade received an overhaul to better match closely with the Fragmentation Round or M400 GL, but with some slight differences.
+- Attack type changed from not having one to Shotgun
+- Will no longer ignore armor damage reduction
+- Radius increased to 400
+- Will resume firing .4s faster
+- Time to explode increased by .4s
+- ***Scout Reconnaissance & Rifleman (MOS)***
+  - Damage at level 1 increased from 620 to 1260
+  - Damage per level improved
+  - Cooldown at level 1 decreased from 35s to 20s
+  - Cooldown per level improved
+  - Energy cost at level 1 decreased from 40 to 22
+  - Energy cost per level improved
+- ***Detachment Commander (MOS)***
+  - Damage increased from 1200 to 1260
+  - Cooldown decreased from 28s to 20s
+  - Energy cost decreased from 32 to 22
+- ***Detachment Commander (Mini)***
+  - Damage increased from 1200 to 1260
+
+**Energy Orb**
+-# For over 4 moons and by the codex’s blessing, the enigmatic spheroid has finally been decrypted…
+:tada_hyper: :energyorb: :tada_hyper: ***Energy Orb optimized!*** :tada_hyper: :energyorb: :tada_hyper:
+- Moved away from using gamecache and will no longer disappear after casting on singleplayer
+- Trees are now easier to fell and will no longer bounce off of them
+  - Additionally standing to the left side of the tree is no longer required
+- Barricades will no longer be dislocated when the orb passes through them
+- Will bounce off ground vehicles and will no longer dislocate them, however they will still be stunned
+- No longer explode in the middle of its flight if it cannot find an alternative path to take
+  - This will make the orb appear to be stuck, or it will somehow manage to get itself unstuck
+- Updated VFX when stunned by the orb
+- Units hit by the orb or caught in the explosion at the end of the orb’s lifecycle, will explode if the damage is greater than their HP
+  - Will only apply to units can be “exploded”
+- Explosion damage is now consistent and will damage those in prone
+  - Will no longer cause a secondary explosion at the center of the map
+- Orb’s explosion damage at level 1 has been increased from 350 to 1000
+- Explosion damage per level increased to 1000
+- Ground vehicles will only receive 10% of the explosion damage if caught in the explosion
+- Trees within 250 radius of the explosion will be felled
+- Orb’s explosion will now be able to detonate explosives
+  -# Including Satchel Charges
+**Ion Cannon**
+- Updated VFX for both Ghost mini and MOS
+- Attack type changed from Incendiary to Plasma (Mini & MOS)
+- Damage increased from 15000 to 50000 (MOS)
+- Cast time increased from .5s to 1.5s (MOS)
+- Energy cost increased from 80 to 160 (MOS)
+- Explosives within range will detonate and deal their respective detonation damage
+**Plasma Grenade**
+- Plasma damage at level 1 increased from 500 to 900
+- Plasma damage per level decreased from 200 to 100
+- Plasma burn damage at level 1 increased from 10 to 30
+- Plasma burn damage per level increased from 10 to 30
+- Energy cost at level 1 decreased from 45 to 40
+### Items
+**MRL**
+- Rocket speed stays consistent when firing close by
+- Will have a 2-layer damage
+- ***Inner***
+  - Damage applied to units within 100 radius will ignore the unit’s armor damage reduction
+  - Radius will increase by 5 per **HEAT Rocket** level
+- ***Outer***
+  - Damage applied to units outside of the inner radius will not ignore the unit’s armor damage reduction
+**Frag Grenade**
+- Damage increased from 1200 to 1260
+**M400 GL & XM35 MAR**
+- Maximum charge decreased from 15 to 10
+- Launching a round will pause weapon firing for .4s
+- Attack type changed from not having one to Shotgun
+- Will no longer ignore armor damage reduction
+- Launching a round over 1700+ range will cause it to immediately explode on impact
+- Range increased from 2800 to 3000
+**Plasma Grenade**
+- Plasma burn duration decreased from 11 to 9 to match level 1 plasma grenade ability
+- Range decreased from 2100 to 1800
+**Smoke Grenade**
+- Cooldown increased from .3s to 3s
+**Light Filter**
+- Increased sight radius from 300 to 600
+**Armor Piercing Rounds & Stun Rounds**
+- Removed restriction from units not being able to pick up APR
+- Bonuses will no longer affect RQ-7B Global Hawk
+**Aim Assistant**
+- Bonuses will no longer affect RQ-7B Global Hawk
+### Rifleman
+- Rifleman will now receive an extra magazine (+2 > +3) when using an Ammo Case or a Magazine
+### MOS Unlock
+- Grenadier unlock requirement moved from 250 to 2500 RXP
+- Scout Reconnaissance unlock requirement moved from 250 to 5000 RXP
+- Designated Marksman unlock requirement moved from 500 to 8000 RXP 
+- Combat Engineer unlock requirement moved from 2.5k to 50k RXP
+- Heavy Support unlock requirement moved from 5000 to 40000 RXP
+- Assaultman unlock requirement moved from 8000 to 20000 RXP
+- Cyborg unlock requirement moved from 12000 to 30000 RXP
+- RQ-7B Global Hawk unlock requirement moved from 12000 to 130000 RXP
+- Forward Observer unlock requirement moved from 20k to 40k RXP
+- Ghost unlock requirement moved from 30k to 90k RXP
+- M2A3 Bradley unlock requirement moved from 190000 to 300000 RXP
+### Mission
+- RQ-7B Global Hawk will no longer be able to pick up Empty Vials
+**Survival**
+- Marines will no longer spawn in the river and the northern area north of the river.
+### Projectile Accuracy
+Several items and abilities will have their accuracy include the distance to the target, rather than having a flat offset rate. This means the closer the target is, the accurate it will be.
+- Flare Gun will now be offset, distance will not be included
+- Hellfire and TOW Missile updated to be more accurate when targeting at the maximum range
+- Units with the ***Grenade Accuracy Assist Module*** passive ability will now include distance to target for the projectile offset
+  - Frag Grenade (Ability & Item) 
+  - M400 GL
+  - Plasma Grenade (Ability & Item)
+  - Smoke Grenade (Ability & Item)
+  - Stun Grenade (Ability & Item)
+  - WP Grenade (Ability & Item)
+  - MRL
+  - Ground Flare (Ability & Item)
+### RXP
+**Kill Bounties**
+- RXP rewarded for killing a Class B, A, and S has been readjusted
+- Added Class B Zombie, Egg Sack, and Genesis to the reward system
+**Survival Mode**
+- RXP Multiplier increased by 50%
+- Periodic RXP gain adjusted based on the amount of players playing
+  - You will get more RXP with less players and less RXP with more players
+- Zombie buff increased to match insane zombie buff
+
+## Gameplay
+### Units
+**Minerva**
+- Leap became more lethal under certain circumstances
+**Boomer & Horror**
+- Will damage tree on exploding
+- Will give tinnitus to nearby players
+**Zombies**
+- Some zombies will be able to trample down trees, barricades, sentry guns, and/or field cameras
+**Police Officer (Shotgun)**
+- Will be able to riflebutt
+**M70 Sentry Gun (Ability & Item)**
+- Will no longer pick up Ammo Cases
+**H-36 Stryker**
+- Added new passive ability to reveal cloaked units to itself with a radius of 2000
+**Combat Engineer Barricade**
+- Barricade will play the death animation rather than disappearing after going over the barricade placement limit
+**M2A3 Bradley**
+- Will now spawn on all global respawns
+**Forward Observer**
+- ***New Forward Observer Commands***
+  - Forward Observer will have 4 new commands to better fine tune their Fire Mission and Illumination Round.
+  - ***Radius***
+    - Added **-fr ####** (150 – 1000) command to adjust Fire Mission mission radius
+    - Added **-ir ####** (150 – 1000) command to adjust Illumination Round mission radius
+  - ***Shells per Mission***
+    - Added **-fs ####** (1 – 15) command to adjust Fire Mission shells per mission
+    - Added **-is ####** (1 – 15) command to adjust Illumination Round shells per mission
+  - ***Forward Observer Stats (-fost)***
+    - Updated **-fost** display
+  - ***Mission Interval***
+    - Removed interval value **d** to reset interval values
+### Global Respawn
+**Difficulty: Insane**
+- First global respawn will happen 30s after convoy (#3rd-mission) exits
+- Final global respawn will no longer happen when the Twin mission (#5th-mission) starts, instead it will happen before the krill spawns
+**Difficulty: Hard & below**
+Will now have a total of 3 global respawns.
+- First global respawn will happen 30s after convoy (#3rd-mission) exits
+- Second global respawn will happen after the 1st phase of the #4th-mission, effectively replacing the mini reinforcement the dead players receive
+- Third and final global respawn will no longer happen when the Twin mission (#5th-mission) starts, instead it will happen before the krill spawns
+### Abilities & Items
+**MOS Weapon Firing Mode**
+- MOS weapon firing modes have been revamped to allow selection of the firing mode rather than cycling through them. The unlock requirement for the firing mode remains untouched. This is a small boon for those that love to change firing mode throughout the game, it will take time getting used to the hotkeys but the time spent cycling through the firing mode decreases significantly. For example, going from automatic to burst-fire will take 2-3s under perfect condition. After the update, it will take ~1s.
+  - **Toggle Fire Mode**
+    - This has been renamed to **Fire Mode**
+    - Will open a submenu to select one of the three firing mode if unlocked
+    - Selecting a firing mode will automatically close the submenu
+  - **Single**
+    - This has been renamed to **Semi-automatic**
+**Revive**
+- Added SFX when starting and ending
+- Dead MOS that are prone will be revived standing up
+**Prone**
+- Sprinting while prone will transition the unit to standing up and then sprinting
+- Revived dead players will immediately stand up if they died while prone
+**Riflebutt**
+- MOS with **Basic Combat Training** and **Special Combat Training** (**Designated Marksman**) level 3 will automatically have Riflebutt turned on
+**Flare Gun (Ability & Item)**
+- Added new SFX
+**Frag Grenade (Item)**
+- Will spawn more frequently 
+**Weapon Cache**
+- Weapon cache will now have several desginated spawn locations and should no longer spawn in inaccessible areas
+- Player owned units will now be able to trigger the weapon caches
+- Triggering a weapon cache will create a ground flare closeby
+### Environment
+- **Trees**
+  -# More ways to down those torturous trees! :fire~1:
+  - Ghost (Mini & MOS) and Heavy Support will be able to attack trees
+  - Plasma Grenade will be able to damage trees throughout its duration
+  - WP Grenade and White Phosphorus will be able to damage trees throughout its duration
+- **Bushes**
+  - All of the bush doodads have been updated to be walkable
+- **Umbrella Facility**
+  - Removed entry restriction that was preventing players from entering the facility at the entrance if it is not the Umbrella mission route
+  - RQ-7B Global Hawk are now able to enter the 2 big empty areas west of the main entrance
+- **Umbrella Warehouse**
+  - Removed entry restriction that was preventing players from entering the warehouse
+- **Weather**
+  - Disabled snow storm
+- **North Road**
+  - The roads going over the two hills at northern part of the map have been flatten
+  -# :cat_rage:fuck yeah! 
+### Screen Shake
+- Screen shaking will trigger based on a player’s unit location and the distance to the target area
+### Tooltips
+Tooltips for both abilities and items have been updated to follow a more standarized format, and they now show more detailed information about them!
+- Tooltips now show more detailed information
+- Several ability and learning tooltips are now dynamic and will show the new values or progress, such as:
+  - Basic/Special Combat Training now shows which perks you’ll unlock next
+  - Fire Mission & Illumination Round will show you updated call times when leveling Rangefinder
+  - HEAT Rocket, EMP Rocket, and MRL bonus damage are updated dynamically
+  - Precision Shot bonus damage and item bonus damage are updated dynamically
+### Player Commands
+Player commands: **-t**, **-st**, and **-ms** color scheme has been updated to better stand out from the background. Additionally, **-st** now features a death and revived stats! Due to adding 2 extra counters to **-st**, Kills, Hits, Deaths, and Revives have been shortened to only be the initial letter of their word to lessen the screen clutter. 
+- **Navy Corpsman** & **Combat Medic** players will have a [+] at the front of their names
+- Font color for each player name will be their player color
+**-st**
+- MOS is now dark orange
+- Kills is now dark orange
+- Hits is now light red
+- Level is now light blue
+- Death counter added
+- Revived counter added – will count the amount of revives successfully performed (**Navy Corpsman** & **Combat Medic** only)
+- Hit counter will no longer register hits after game over
+**-t**
+- Vehicle players will no longer have their unit name missing
+- Vehicle player levels will now show their upgrade level
+**-tl**
+- Player location pings will now show their player color
+**-d**
+- Dead player pings will now show their player color
+- Vehicles will no longer ping at the center of the map
+**-xinfest**
+- Added new game mode called **Experimental Infestation**. All Class S, A, and B zombies will now influence the infestation rate
+**Force Genesis**
+- Command **-genesis** disabled.
+### Zombie Ping
+Go check out #enemies for information on all the zombies in the game!
+- Periodic zombie ping will no longer ping class B zombies and will only ping class S, and class A
+- Ping will be cascaded, starting from class A to class S
+- Class S zombies will have an orange ping and will last for 15s
+- Class A zombies will have a pink ping and will last for 10s
+### Populace Police
+The USMC has provided spare equipment for the two towns to bolster their defenses, allowing a limited number of volunteers to be equipped with a weapon and expanding defensive coverage.
+- North Town was provided with an additional M70 Sentry Gun
+- The checkpoint between the two towns was provided with an M70 Sentry Gun along with a brave volunteer
+- South Town has fortified an area close to the landing zone with several policemen and an M70 Sentry Gun, several civilians also volunteered to bolster key areas lacking personnel
+- M70 Sentry Gun for the police will no longer need ammo to fire
+### Picking MOS
+- All MOS will now be shown regardless of rank and will now show how much RXP required to unlock them
+- MOS will be grayed out if the amount of RXP is not met
+### Weapon Firing
+The following should no longer do empty firing when ordered to move immediately after firing.
+- Combat Engineer (Mini & MOS)
+- Designated Marksman (Mini & MOS)
+- Detachment Commander (MOS)
+- Heavy Support
+### Item Restriction
+- RXP require to lift the item restriction increased from 500 to 2500
+### Vision
+Vision is important! It provides the team an advantage in dealing looming threats that’s headed their way. However, the gameplay aspect is quite lackluster and doesn’t have any depth to it; throw a ground flare in the middle of the forest, surrounded by trees, and it will provide the team an absolute vision around the area. This update aims to change that.
+- Damaging abilities and items will no longer provide a brief window of vision of the target area with the exception of Illumination Round and Precision Shot
+- Ground flares (ability & item) can be obstructed by the environment
+- You will now be able to see White Phosphorus, Smoke, Satchel Charge, Claymore, and C4 in the fog of war.
+
+## Miscellaneous
+- Weapon System further consolidated
+- Updated discord link
+- HUD Updated to show player color and player slot number
+- Intel (F9) Updated
+- New loading screen
