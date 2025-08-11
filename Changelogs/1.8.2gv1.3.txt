@@ -1,0 +1,14 @@
+# 1.8.2gv1.3
+## Fixes
+### High Pings
+- Discovered an audio process that was causing the gradual increase in ping, that has been disabled for the time being
+### Kill Counter
+- Kill counter will show the correct amount of enemy kills
+### Umbrella Ping
+- Fixed an issue where Scout Reconnaissance level 1 will activate the periodic Umbrella position ping
+### Field Camera
+- Fixed an issue where player placed Field Cameras will share vision to the Umbrella
+### Weapon Sound Effects
+- Fixed an issue where picking up an SA Combat Shotgun or a G89 will play their respective SFX regardless of what MOS the player are playing as
+### Detonating Satchel Charges
+- Fixed an issue where placing a Satchel Charge inside of an ultimate ability AoE will not detonate. i.e. Placing a Satchel Charge inside the AoE of an incoming Air Strike
