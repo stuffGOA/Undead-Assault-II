@@ -1,0 +1,91 @@
+# 1.8.2gv1.4
+## Fixes
+### Reloading
+- MOS Weapon System updated to address the reloading bug
+### M240C Machine Gun Tooltip
+- Corrected typo for level 2-10
+### MRL Tooltip
+- Corrected typo for HEAT & EMP Rocket bonuses
+### Combat Engineer Critial Shot Tooltip
+- Fixed an incorrect ability id being referenced
+### Ghost (MOS) Decreased Attributes
+- Fixed an issue where if a Ghost (MOS) gets revived, they will get a decreased attribute stats
+### MG Reloading Indicator
+- Fixed an issue where the reloading indicator will stay permenantly if using Linked Belts and Reload at the same time
+### Infestation
+- Fixed an issue where if infestation level is less or equal to 0, only Player 1 (Red) will be updated
+### EMP Rocket in the Fog of War
+- Fixed an issue where EMP Rocket does not stun enemies inside the Fog of War
+### Energy Orb
+- Fixed an issue where Ghost/Heavy Support players were able to launch multiple Energy Orb
+### Ghoul Vision
+- Fixed an issue where a ghoul was providing vision to all players after the APC has reached the warehouse during the crate mission
+### Disabled Satchel Charges
+- Fixed an issue where Place Satchel Charge remains disabled if destroyed by the M2A3 Bradley or M3 Defender
+### HEAT Rocket
+- Fixed an issue where Assaultman (MOS) HEAT Rocket would sometime deal both inner and outer damage layer to a big target, such as a pudge
+
+## Balancing & Changes
+### MOS Weapon System
+**Shotgun**
+- Base reload duration decreased from 4s to 1s
+**Weapon Jam at Full Magazine (+1)**
+- Reloading with a weapon jam at full magazine with an extra round chambered will only go through the unjamming process
+### Global Respawn
+- The final global respawn have been moved and will now trigger at the start of the Twin mission (#5th-mission)
+### TOW Missile
+The homing feature for the TOW missile was causing some unforseen bugs and misuses; such as not wanting to use the homing feature. The TOW missile will now be split into 2 separate abilities, balanced, and renamed.
+- **BGM-72A TOW 3N**
+- The standard AoE non-homing TOW missile to clear out enemies within an area.
+  - Damage per level decreased from 500 to 400
+- **BGM-72H TOW 3N**
+- The homing TOW missile for individual targets.
+  - Will only have a 1-layer damage
+  - **Targeted Unit**
+    - Base damage increased from 1300 to 1500
+    - Damage per level remains the same at 500
+  - **Outer Blast**
+    - Base damage decreased from 1300 to 450
+    - Damage per level decreased from 500 to 150
+    - Blast radius decreased from 375 to 256
+### Infestation
+- Class S and Class A zombies will now receive a **Mutating Metabolism** buff upon entering the map
+- **Mutating Metabolism**
+  - Prevents the zombie from receiving Evolved Metabolism for 5 minutes
+### Satchel Charge
+- Satchel Charge will now detonate if destroyed by M2A3 Bradley or M3 Defender
+### Genesis
+- :tada_hyper: :cursedhappyseal: :tada_hyper: 
+### Precision Shot - Designated Marksman
+- Aim time will be decrease per level by .2s
+### Scorch Flamethrower
+It's been discovered that Scorch Flamethrower was not applying +250 splash radius bonus along with some hidden affects. Unfortunately, due to a bug from BNet the splash radius bonus will not be included; but, the hidden affects on the other hand will be included.
+- Tooltip has been updated
+- Scorch Flamethrower will now apply a -20% movement speed debuff to enemies in a 125 radius for 3s
+- Will have an attack range bonus of 200
+- Will have an increased projectile speed of 250
+
+## Gameplay
+### Global RXP Reset
+Starting in 1.8.2gv1.4, all save codes from all the previous versions will be invalid and will no longer work from here on out. In place of this reset comes with a new save process with some QoL, and preparation for future versions (yes, achievements are coming). 
+
+Due to the generated code being much longer than before, the generated code will no longer show ingame when saving and -load command will no longer be available. With that said, it is highly recommended to make a backup copy of your saved txt file or risk losing all of your progress; you can find your saved txt file at `\Documents\Warcraft III\CustomMapData\Undead Assault 2`, the file name being your `BattleNet User Id` with a `!` at the end.
+
+Code recovery is still an option for both before and after the global RXP reset; however, this DOES NOT mean you can recover your RXP from previous versions to 1.8.2gv1.4, everyone will be starting over from scratch on 1.8.2gv1.4. e.g. 999999 RXP from 1.8.2gv1.3 to 1.8.2gv1.4 is a NO. With that said, it is still highly recommended to make a backup copy for the latter, more on this will be elaborated in the future (possibly on 1.8.3).
+- Current view distance number (-v ##) will be saved and carried over to the next game
+- Fire Mission & Illumination Round commands ( -fs/-fi/-fr -is/-ii/-ir ) will be saved and carried over to the next game
+### Player Commands
+**-st**
+- Reformatted the layout by moving player name from the left to the right
+- Kills, deaths, hits, and revives have been formatted to keep the layout straight
+**-t**
+- Player gained RXP has been moved to -st
+**-ms**
+- -ms command has been disabled
+
+## Misc
+### M2A3 Bradley Reinforcements
+- Optimized the process and cleaned up any left over memories
+- Will now have its own timer
+### Critical Shot Tooltip
+- Updated learning tooltip
