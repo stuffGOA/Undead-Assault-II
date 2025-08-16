@@ -1,5 +1,5 @@
-Current: 1.8.2g1.4<br>
-Updated: 08/11/2025
+Current: 1.8.2g1.5<br>
+Updated: 08/15/2025
 
 # Undead Assault II
 
