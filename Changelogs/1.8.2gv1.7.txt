@@ -1,0 +1,44 @@
+# 1.8.2gv1.7
+## Fixes
+### Rifleman
+- Automatically defaulting to Rifleman will now be properly start out at level 3
+- **Smoke Grenade**
+    - Removed +2s Cooldown per level from learning tooltip
+### Player Commands
+- **-t**
+    - Automatically defaulting to Rifleman will now properly show on -t command
+### Forward Observer
+- **-fost**
+    - Shells will now properly show the correct amount of shells left
+### M2A3 Bradley
+- **BGM-72A/BGM-72H**
+    - Fixed cooldown not applying correctly at level 10
+### Minerva
+- Fixed Minvera not detonating Satchel Charges on stomp
+### Default Difficulty
+- Fixed infestation not working on defaulting to Normal Mode
+### Hit Count
+- Fixed hit counter not registering hits correctly
+### Plasma Grenade
+- Fixed description typo
+### Saline Syringe (MOS)
+- Corrected ability learning tooltip
+
+## Balancing & Changes
+### Forward Observer
+- **Fire Mission**
+    - Base damage increased from 550 to 1000
+    - Damage per level increased from 210 to 500
+### Difficulty Modes
+- **Recruit Mode**
+    - Removed MOS restriction
+- **Normal Mode**
+    - Slightly increased unit stats to fill in the sudden difficulty jump from Normal to Hard
+    - Defaulting to Normal Mode will no longer restrict MOS to Rifleman and Navy Corpsman
+
+## Gameplay
+### Item Restriction
+- New players will no longer be restricted to picking up lethal items and skills
+### Items
+- **MRL**
+    - Disabled dynamic tooltip
